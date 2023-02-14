@@ -1,4 +1,4 @@
-package utils;
+package heroes;
 
 public class HeroAttributes {
 
@@ -10,6 +10,12 @@ public class HeroAttributes {
         this.strength=str;
         this.dexterity=dex;
         this.intelligence=intel;
+    }
+
+    public void addAttributes(int str, int dex, int intel) {
+        this.strength += str;
+        this.dexterity += dex;
+        this.intelligence += intel;
     }
 
     public int getStrength() {

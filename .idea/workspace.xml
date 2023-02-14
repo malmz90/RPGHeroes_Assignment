@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e52fd4b-61f6-4e15-83e0-a36beb4ac99d" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroes/Hero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroes/Mage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroes/Ranger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroes/Rogue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/heroes/Warrior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/HeroAttributes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/Slot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/Weapon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/WeaponType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Mage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Ranger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Ranger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Rogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Warrior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/HeroAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/HeroAttributes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +31,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -86,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676363850070</updated>
-      <workItem from="1676363851372" duration="1035000" />
+      <workItem from="1676363851372" duration="11259000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1676364139708</created>

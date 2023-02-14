@@ -1,20 +1,19 @@
 package heroes;
 
-import utils.HeroAttributes;
-
 public abstract class Hero {
 
-
     public String name;
+
     public int level = 1;
-
-
-
     public HeroAttributes levelAttributes;
 
     public Hero(String name,HeroAttributes attributes) {
         this.name = name;
         this.levelAttributes = attributes;
+    }
+
+    public void levelUp() {
+        level++;
     }
 
     public String getName() {
@@ -24,7 +23,9 @@ public abstract class Hero {
         return levelAttributes;
     }
 
-
+    public int getLevel() {
+        return level;
+    }
 
 
 
