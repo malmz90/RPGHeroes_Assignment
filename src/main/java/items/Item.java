@@ -15,4 +15,8 @@ public abstract class Item {
     public Slot getSlot() {
         return slot;
     }
+
+    public int getRequiredLevel() {
+        return requiredLevel;
+    }
 }

@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e52fd4b-61f6-4e15-83e0-a36beb4ac99d" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/items/Armor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/items/ArmorType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/InvalidArmorException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/InvalidWeaponException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Mage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Mage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Ranger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Ranger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Rogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Warrior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Armor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Armor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Weapon.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676363850070</updated>
       <workItem from="1676363851372" duration="11259000" />
-      <workItem from="1676448687129" duration="5902000" />
+      <workItem from="1676448687129" duration="17402000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1676364139708</created>
@@ -110,10 +114,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="3" />
+          <line>17</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.util.HashMap$Node" memberName="key" />
+        <PinnedItemInfo parentTag="java.util.HashMap$Node" memberName="value" />
+        <PinnedItemInfo parentTag="items.Weapon" memberName="weaponType" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
