@@ -19,5 +19,7 @@ public class Rogue extends Hero{
         super.levelUp();
     }
 
-
+    @Override public int getDamageAttribute(HeroAttributes attributes) {
+        return attributes.getDexterity();
+    }
 }

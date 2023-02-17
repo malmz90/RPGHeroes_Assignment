@@ -12,6 +12,7 @@ public class HeroAttributes {
         this.intelligence=intel;
     }
 
+
     public void addAttributes(int str, int dex, int intel) {
         this.strength += str;
         this.dexterity += dex;
@@ -40,6 +41,14 @@ public class HeroAttributes {
 
     public void setIntelligence(int intelligence) {
         this.intelligence = intelligence;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        HeroAttributes that = (HeroAttributes) o;
+        return strength == that.strength && dexterity == that.dexterity && intelligence == that.intelligence;
     }
     @Override
     public String toString() {

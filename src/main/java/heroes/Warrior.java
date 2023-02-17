@@ -9,8 +9,9 @@ import java.util.Arrays;
 public class Warrior extends Hero {
 
     public Warrior(String name)
+
     {
-        super(name, new HeroAttributes(5,2,1));
+        super(name,new HeroAttributes(5,2,1));
         validWeaponTypes = new ArrayList<>(Arrays.asList(WeaponType.Axes,WeaponType.Hammers,WeaponType.Swords));
         validArmorTypes = new ArrayList<>(Arrays.asList(ArmorType.Mail,ArmorType.Plate));
     }
@@ -21,5 +22,7 @@ public class Warrior extends Hero {
         super.levelUp();
     }
 
-
+    @Override public int getDamageAttribute(HeroAttributes attributes) {
+        return attributes.getStrength();
+    }
 }

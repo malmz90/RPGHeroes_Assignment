@@ -5,6 +5,7 @@ import items.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public abstract class Hero {
 
@@ -15,14 +16,30 @@ public abstract class Hero {
    protected  ArrayList<WeaponType> validWeaponTypes;
     protected   ArrayList<ArmorType> validArmorTypes;
 
-    public Hero(String name,HeroAttributes attributes) {
-        this.name = name;
+    public Hero(String name, HeroAttributes attributes) {
         this.levelAttributes = attributes;
+        this.name = name;
         equipment.put(Slot.Weapon,null);
         equipment.put(Slot.Head,null);
         equipment.put(Slot.Body,null);
         equipment.put(Slot.Legs,null);
 
+    }
+
+    public HeroAttributes getTotalAttributes() {
+        HeroAttributes total = levelAttributes;
+
+        for (Slot slot : Slot.values()) {
+
+            if(!slot.equals(Slot.Weapon)){
+                if(getArmor(slot) != null) {
+                    total.addAttributes(
+                            getArmor(slot).getArmorAttributes().getStrength(),
+                            getArmor(slot).getArmorAttributes().getDexterity(),
+                            getArmor(slot).getArmorAttributes().getIntelligence());
+                }
+            }}
+        return total;
     }
 
     public void equipWeapon(Weapon weapon) {
@@ -42,6 +59,7 @@ public abstract class Hero {
 
     }
 
+
     public void equipArmor(Armor armor){
         try {
             if(!this.validArmorTypes.contains(armor.getArmorType())) {
@@ -56,12 +74,35 @@ public abstract class Hero {
             System.out.println(e);
         }
     }
+    public double damage() {
+        double dmg = 0;
+        if(equipment.get(Slot.Weapon) != null)
+            dmg = ((Weapon)equipment.get(Slot.Weapon)).getWeaponDamage();
+        return dmg * (1 + (getDamageAttribute(getTotalAttributes())/100d));
 
+    };
 
+    public StringBuilder display(){
+        StringBuilder details = new StringBuilder("Hero details:" + "\n");
+        details.append("Name: ").append(this.name).append("\n");
+        details.append("Class: ").append(this.getClass().getSimpleName()).append("\n");
+        details.append("Level: ").append(this.level).append("\n");
+        details.append(this.levelAttributes).append("\n");
+        details.append("Damage: ").append(this.damage());
+        return details;
+    }
+
+   public abstract int getDamageAttribute(HeroAttributes attributes);
     public void levelUp() {
         level++;
     }
 
+    public Weapon getWeapon(){
+        return (Weapon) equipment.get(Slot.Weapon);
+    }
+    public Armor getArmor(Slot slot){
+        return (Armor) equipment.get(slot);
+    }
     public String getName() {
         return name;
     }
@@ -69,12 +110,10 @@ public abstract class Hero {
         return levelAttributes;
     }
 
+
     public int getLevel() {
         return level;
     }
-
-
-
 
 
 
