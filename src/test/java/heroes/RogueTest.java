@@ -6,38 +6,38 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MageTest {
-    Mage mage;
+class RogueTest {
+
+    Rogue rogue;
     @BeforeEach
     public void setup() {
-        mage = new Mage("Sorc");
+        rogue = new Rogue("Rang");
     }
 
     @Test
     public void testGetName_returnsExpectedName(){
-        Assertions.assertEquals(mage.getName(),"Sorc");
+        Assertions.assertEquals(rogue.getName(),"Rang");
     }
     @Test
     public void testGetLevel_returnsExpectedLevel() {
-        Assertions.assertEquals(mage.getLevel(),1);
+        Assertions.assertEquals(rogue.getLevel(),1);
     }
 
     @Test
     public void testGetTotalAttributes_ReturnsExpectedAttributes() {
-        HeroAttributes expectedAttributes = new HeroAttributes(1,1,8);
-        HeroAttributes actualAttributes = mage.getTotalAttributes();
+        HeroAttributes expectedAttributes = new HeroAttributes(2,6,1);
+        HeroAttributes actualAttributes = rogue.getTotalAttributes();
         assertEquals(expectedAttributes, actualAttributes);
     }
     @Test
     public void testLevelUp_returnsCorrectAttributes() {
 
-        HeroAttributes expected = new HeroAttributes(2,2,13);
+        HeroAttributes expected = new HeroAttributes(3,10,2);
 
-        mage.levelUp();
-        HeroAttributes actual = mage.getTotalAttributes();
+        rogue.levelUp();
+        HeroAttributes actual = rogue.getTotalAttributes();
 
         assertEquals(expected,actual);
     }
-
 
 }
