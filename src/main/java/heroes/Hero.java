@@ -42,8 +42,8 @@ public abstract class Hero {
         return total;
     }
 
-    public void equipWeapon(Weapon weapon) {
-        try {
+    public void equipWeapon(Weapon weapon) throws InvalidWeaponException {
+
             if(!this.validWeaponTypes.contains(weapon.getWeaponType()) ){
                 throw new InvalidWeaponException("You cant equip weapon of type " + weapon.getWeaponType());
             }
@@ -53,15 +53,9 @@ public abstract class Hero {
 
             equipment.put(Slot.Weapon,weapon);
 
-        } catch (InvalidWeaponException e) {
-            System.out.println(e);
-        }
-
     }
 
-
-    public void equipArmor(Armor armor){
-        try {
+    public void equipArmor(Armor armor) throws InvalidArmorException{
             if(!this.validArmorTypes.contains(armor.getArmorType())) {
                 throw new InvalidArmorException("You cant equip armor of type " + armor.getArmorType());
             }
@@ -69,10 +63,6 @@ public abstract class Hero {
                 throw new InvalidArmorException("You are to low level to equip this piece of armor");
             }
             equipment.put(armor.getSlot(),armor);
-
-        } catch (InvalidArmorException e) {
-            System.out.println(e);
-        }
     }
     public double damage() {
         double dmg = 0;

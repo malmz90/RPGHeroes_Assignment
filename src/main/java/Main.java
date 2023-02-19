@@ -1,10 +1,11 @@
 
+import exceptions.InvalidWeaponException;
 import heroes.HeroAttributes;
 import heroes.Warrior;
 import items.*;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvalidWeaponException {
         Warrior warrior = new Warrior("Voldemort");
 
         warrior.levelUp();

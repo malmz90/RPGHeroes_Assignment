@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e52fd4b-61f6-4e15-83e0-a36beb4ac99d" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/heroes/RangerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/heroes/RogueTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/heroes/WarriorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/items/ArmorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/items/WeaponTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/heroes/EquipArmWepTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/heroes/MageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/heroes/MageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exceptions/InvalidArmorException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exceptions/InvalidArmorException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Hero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +20,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -78,7 +85,14 @@
       <recent name="items" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ArmorTest">
+  <component name="RunManager" selected="Gradle.EquipArmWepTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="RPGHeroes_Assignment.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ArmorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -102,7 +116,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RangerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EquipArmWepTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -115,30 +129,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;heroes.RangerTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="RogueTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;heroes.RogueTest&quot;" />
+            <option value="&quot;heroes.EquipArmWepTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -196,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.EquipArmWepTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.ArmorTest" />
         <item itemvalue="Gradle.WeaponTest" />
         <item itemvalue="Gradle.WarriorTest" />
-        <item itemvalue="Gradle.RogueTest" />
-        <item itemvalue="Gradle.RangerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +206,7 @@
       <workItem from="1676363851372" duration="11259000" />
       <workItem from="1676448687129" duration="18067000" />
       <workItem from="1676623643269" duration="14642000" />
-      <workItem from="1676802863473" duration="4854000" />
+      <workItem from="1676802863473" duration="8809000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1676364139708</created>
@@ -239,7 +230,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>17</line>
+          <line>18</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
