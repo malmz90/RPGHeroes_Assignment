@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e52fd4b-61f6-4e15-83e0-a36beb4ac99d" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/heroes/EquipArmWepTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/exceptions/InvalidArmorException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exceptions/InvalidArmorException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heroes/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heroes/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/heroes/EquipArmWepTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/heroes/EquipArmWepTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +203,7 @@
       <workItem from="1676363851372" duration="11259000" />
       <workItem from="1676448687129" duration="18067000" />
       <workItem from="1676623643269" duration="14642000" />
-      <workItem from="1676802863473" duration="8809000" />
+      <workItem from="1676802863473" duration="10636000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1676364139708</created>

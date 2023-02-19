@@ -73,5 +73,29 @@ class EquipArmWepTest {
     }
 
 
+    @Test
+    void testAttributesWithoutArmor() {
+        HeroAttributes attributes = mage.getLevelAttributes();
+        HeroAttributes attributesWithArm = mage.getTotalAttributes();
+
+        assertEquals(attributes, attributesWithArm);
+    }
+
+    @Test
+    void testAttributesWithArmor() throws InvalidArmorException {
+         armor = new Armor("ClothPants",1,Slot.Legs, new HeroAttributes(4,3,10),ArmorType.Cloth );
+
+        try {
+            mage.equipArmor(armor);
+        } catch (Exception ignored) {
+        }
+        HeroAttributes attributes = mage.getLevelAttributes();
+        HeroAttributes attributesWithArm = mage.getTotalAttributes();
+
+
+        attributes.addAttributes(4,3,10);
+        assertEquals(attributes, attributesWithArm);
+    }
+
 
 }
